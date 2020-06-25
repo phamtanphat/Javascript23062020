@@ -27,6 +27,31 @@
 // console.log(teo.address)
 
 // 4 : Array
-const arrayNames = ["Teo","Ti","Tun"]
-arrayNames[0] = "Tuan"
-console.log(arrayNames[0])
+// const arrayNames = ["Teo","Ti","Tun"]
+// arrayNames[0] = "Tuan"
+// console.log(arrayNames[0])
+// mutable vs immutable
+
+// 5 : Toan tu
+// + - * / % , ++ , --
+
+// Do uu tien cua toan tu
+// 1 :  ++ --
+// 2 :  * , /
+// 3 :  + , -
+var a = 5
+var b = 6 
+var ketqua = a++ - --b  + --a + b-- + ++a - b++ + b-- - b++
+// 5 - --b  + --a + b-- + ++a - b++ + b-- - b++  a = 6 , b = 6
+// 5 - 5  + --a + b-- + ++a - b++ + b-- - b++  a = 6 , b = 5
+// 5 - 5  + 5 + b-- + ++a - b++ + b-- - b++  a = 5 , b = 5
+// 5 - 5  + 5 + 5 + ++a - b++ + b-- - b++  a = 5 , b = 4
+// 5 - 5  + 5 + 5 + 6 - b++ + b-- - b++  a = 6 , b = 4
+// 5 - 5  + 5 + 5 + 6 - 4 + b-- - b++  a = 6 , b = 5
+// 5 - 5  + 5 + 5 + 6 - 4 + 5 - b++  a = 6 , b = 4
+// 5 - 5  + 5 + 5 + 6 - 4 + 5 - 4  a = 6 , b = 5
+// 13
+
+console.log(ketqua)
+
+// ? (10 , 13 , 12)
