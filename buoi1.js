@@ -93,24 +93,19 @@
 // Array
 // var arrayNames = ["Teo","Ti","Tun","Hoa","Tuan"]
 // Object
-const teo = {
-    name : "Nguyen Van Teo",
-    age : 10,
-    info : function(){
-        console.log("Name " + this.name)
-        console.log("Age " + this.age)
-    }
-} 
-for (const key in teo) {
-    console.log(key)
-}
+// const teo = {
+//     name : "Nguyen Van Teo",
+//     age : 10,
+//     info : function(){
+//         console.log("Name " + this.name)
+//         console.log("Age " + this.age)
+//     }
+// } 
+// for (const key in teo) {
+//     console.log(key)
+// }
 
 // Ví dụ
-
-/**
- * Sử dụng vòng lặp for...in để in ra tất cả các key trong object sau, in ra cả các key của các nested object (object con lồng bên trong object lớn)
- * Gợi ý: đây là bài tập khó, bạn nên tìm hiểu về recursive trước
- */
 
 var apartment = {
   bedroom: {
@@ -123,6 +118,13 @@ var apartment = {
 };
 
 function getkey(object){
+    for (const key in object) {
+        console.log(key)
+        if (typeof object[key] == "object"){
+            getkey(object[key])
+        }
+    }
+    // console.log(Object.keys(object))
 }
 
 getkey(apartment)
