@@ -28,4 +28,49 @@
 // const newArrays = arrayNames.concat(arrayNames2)
 // console.log(newArrays)
 
+// 14 : Callback
+
+// function binhphuong(num){
+//     return num * num
+// }
+
+// function tinhtongArray(arr , fn){
+
+// }
+
+// function callback(){
+
+// }
+
+// function getName(){
+    
+// }
+
+var a 
+handle(function(a){
+    console.log(a)
+})
+
+function handle(cb){
+    setTimeout(function(){
+        a = 5
+        cb(a)
+    },2000)
+}
+
+function binhphuong(num){
+    return num * num
+}
+
+function tinhtongArray(arr , fn){
+    var ketqua = 0
+    for (const value of arr) {
+        ketqua += fn(value)
+    }
+    return ketqua
+}
+const arrayNums = [1,2,3,4,5]
+console.log(tinhtongArray(arrayNums, binhphuong))
+
+
 
