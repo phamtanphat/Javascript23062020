@@ -46,31 +46,58 @@
     
 // }
 
-var a 
-handle(function(a){
-    console.log(a)
-})
+// var a 
+// handle(function(a){
+//     console.log(a)
+// })
 
-function handle(cb){
-    setTimeout(function(){
-        a = 5
-        cb(a)
-    },2000)
-}
+// function handle(cb){
+//     setTimeout(function(){
+//         a = 5
+//         cb(a)
+//     },2000)
+// }
 
-function binhphuong(num){
-    return num * num
-}
+// function binhphuong(num){
+//     return num * num
+// }
 
-function tinhtongArray(arr , fn){
-    var ketqua = 0
-    for (const value of arr) {
-        ketqua += fn(value)
+// function tinhtongArray(arr , fn){
+//     var ketqua = 0
+//     for (const value of arr) {
+//         ketqua += fn(value)
+//     }
+//     return ketqua
+// }
+// const arrayNums = [1,2,3,4,5]
+// console.log(tinhtongArray(arrayNums, binhphuong))
+
+// 15: Ham map
+// const arrayNums = [1,2,3,4,5,6,7,8,9,10]
+// const newArrayNums = []
+// for (const value of arrayNums) {
+//     newArrayNums.push(value + 1)
+// }
+// const newArrayNums = arrayNums.map(function(value ,index){
+//     return value +1
+// })
+
+// console.log(newArrayNums)
+// console.log(arrayNums)
+
+const arrayNums = [1,2,3,4,5,6,7,8,9,10]
+
+Array.prototype.myMap = function(cb){
+    const newArray = []
+    for(var i = 0 ; i < this.length ; i++){
+        newArray.push(cb(this[i]))
     }
-    return ketqua
+    return newArray
 }
-const arrayNums = [1,2,3,4,5]
-console.log(tinhtongArray(arrayNums, binhphuong))
 
+const newArray = arrayNums.myMap(function(value){
+    return value  + 1
+})
+console.log(newArray)
 
 
