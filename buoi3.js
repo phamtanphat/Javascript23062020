@@ -69,17 +69,17 @@
 // ];
 // console.log(totalVotes(voters)) // 7
 
-function countOccurrences(arr) {
-    return arr.reduce(function(accum , currentvalue){
-        if(currentvalue in accum){
-            accum[currentvalue]++
-        }else{
-            accum[currentvalue] = 1
-        }
-        return accum
-    },{})
-}
-console.log(countOccurrences(["a", "b", "c", "b", "a", "a"]))
+// function countOccurrences(arr) {
+//     return arr.reduce(function(accum , currentvalue){
+//         if(currentvalue in accum){
+//             accum[currentvalue]++
+//         }else{
+//             accum[currentvalue] = 1
+//         }
+//         return accum
+//     },{})
+// }
+// console.log(countOccurrences(["a", "b", "c", "b", "a", "a"]))
 
 // {"a" : 3 , "b" : 2 , "c" :1 }
 
@@ -90,3 +90,20 @@ console.log(countOccurrences(["a", "b", "c", "b", "a", "a"]))
 
 // teo['address'] = "38 nguyen lam"
 // console.log(teo)
+
+
+//18 : Ham sort
+
+// const arrayNumbers = [1,4,3,7,11,10,21,20,2,31,01]
+
+// console.log(arrayNumbers.sort(function(a , b){
+//     return  b - a
+// }))
+
+// 19 : Math object (Builtin function)
+// var value = Math.ceil(0.1)
+// var value2 = Math.floor(0.99)
+// var value3 = Math.round(0.4)
+// 5 - 10
+var value4 = Math.round(Math.random() * 5) + 5
+console.log(value4)
