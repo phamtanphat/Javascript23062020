@@ -105,5 +105,30 @@
 // var value2 = Math.floor(0.99)
 // var value3 = Math.round(0.4)
 // 5 - 10
-var value4 = Math.round(Math.random() * 5) + 5
-console.log(value4)
+// var value4 = Math.round(Math.random() * 5) + 5
+// console.log(value4)
+
+// 20 : Delete key object
+// const teo = {
+//     name : 'Teo',
+//     age : 20
+// }
+
+// delete teo.name
+// console.log(teo)
+
+// 21 : prototype
+function Sinhvien(name  , age){
+    this.name = name
+    this.age = age
+    this.showName = function(){
+        console.log(this.name)
+    }
+}
+Sinhvien.prototype.address = function(){
+    console.log("Khoa pham")
+}
+
+const teo = new Sinhvien("Nguyen Van Teo", 20)
+const ti = new Sinhvien("Nguyen Van Ti", 22)
+console.log(ti.address === teo.address)
