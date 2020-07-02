@@ -85,19 +85,19 @@
 // console.log(newArrayNums)
 // console.log(arrayNums)
 
-const arrayNums = [1,2,3,4,5,6,7,8,9,10]
+// const arrayNums = [1,2,3,4,5,6,7,8,9,10]
 
-Array.prototype.myMap = function(cb){
-    const newArray = []
-    for(var i = 0 ; i < this.length ; i++){
-        newArray.push(cb(this[i]))
-    }
-    return newArray
-}
+// Array.prototype.myMap = function(cb){
+//     const newArray = []
+//     for(var i = 0 ; i < this.length ; i++){
+//         newArray.push(cb(this[i]))
+//     }
+//     return newArray
+// }
 
-const newArray = arrayNums.myMap(function(value){
-    return value  + 1
-})
-console.log(newArray)
+// const newArray = arrayNums.myMap(function(value){
+//     return value  + 1
+// })
+// console.log(newArray)
 
 
