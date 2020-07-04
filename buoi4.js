@@ -28,7 +28,19 @@
 
 // 24 : Cach su dung tu khoa khai bao bien
 
-for(let i = 0 ; i <= 10 ; i++){
-    console.log("AAA")
-}
-console.log(i)
+// for(let i = 0 ; i <= 10 ; i++){
+//     console.log("AAA")
+// }
+// console.log(i)
+
+// 25 : function context and bind
+
+// const teo = {
+//     name : 'Nguyen Van Teo',
+//     age : 20,
+//     showName : function(){
+//         console.log(this.name)
+//     }
+// }
+// const showName2 = teo.showName.bind({name : "Nguyen van TI"})
+// showName2()
