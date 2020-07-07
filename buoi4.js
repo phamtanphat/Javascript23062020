@@ -109,14 +109,14 @@
 // greeting.call({address : 'Quan 10'} , 'Tom' , 10)
 
 //31 : Apply
-// function sum(){
-//     const numbers = Array.from(arguments)
-//     return numbers.reduce((sum , num )=> sum + num , 0)
-// }
-// function average(){
-//     const x = sum.apply(null,arguments)
-//     return x / arguments.length
-// }
-// average(1,2,3,6)
+    // function sum(){
+    //     const numbers = Array.from(arguments)
+    //     return numbers.reduce((sum , num )=> sum + num , 0)
+    // }
+    // function average(){
+    //     const x = sum.apply(null,arguments)
+    //     return x / arguments.length
+    // }
+    // average(1,2,3,6)
   
   
